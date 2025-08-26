@@ -19,17 +19,17 @@
   </head>
 
   <body>
-    <!-- Navegación -->
-    <nav id="navbar">
-      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
 
+
+  
+    <nav id="navbar">
       <div class="nav-content">
-        <div class="logo"><img src="./img/computadoraCode.png" alt=""></div>
-        <ul class="nav-links">
+        <div class="logo">
+          <img src="./img/computadoraCode.png" alt="" style="width: 48px; height: 48px;">
+        </div>
+   
+        
+<ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre-mi">Sobre Mí</a></li>
            <li><a href="#cursos">Cursos</a></li>
@@ -37,14 +37,24 @@
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <button class="menu-toggle" aria-label="Menu">
+        <!-- Botón toggle -->
+        <div class="menu-toggle" id="menu-toggle" aria-label="Menú">
           <span></span>
           <span></span>
           <span></span>
-        </button>
-      </div>
+        </div>
+ 
     </nav>
+ <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
 
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+</header>
     <!-- Inicio -->
     <section id="inicio" class="hero">
       <div class="hero-content">
