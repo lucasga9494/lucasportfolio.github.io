@@ -3,33 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Lucas Ezequiel García Aran | Desarrollador Web & Analista de Sistemas</title>
-    
-    <!-- Descripción que aparecerá en Google -->
-    <meta name="description" content="Soy Lucas Ezequiel García Aran, Desarrollador Web y Analista de Sistemas. Creo aplicaciones web modernas con HTML, CSS, JavaScript, PHP y MySQL. Mira mis proyectos y contáctame para colaborar.">
-
-    <!-- Palabras clave (opcional, Google ya casi no las usa) -->
-    <meta name="keywords" content="portfolio, desarrollador web, analista de sistemas, HTML, CSS, JavaScript, PHP, MySQL, proyectos web, Universidad de la Ciudad">
-
+    <title>Portfolio - Desarrollador</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="img/codefolder_99364.ico" />
-    <meta name="google-site-verification" content="fJPpOnVARcd7K1e85tWXMontPF1L_DUlO8hFl_lBnHw" />
+     <link rel="icon" type="image/x-icon" href="img/codefolder_99364.ico" />
   </head>
-
   <body>
-
-
-  
+    <!-- Navegación -->
     <nav id="navbar">
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
       <div class="nav-content">
-        <div class="logo">
-          <img src="./img/computadoraCode.png" alt="" style="width: 48px; height: 48px;">
-        </div>
-   
-        
-<ul class="nav-links">
+        <div class="logo"><img src="./img/computadoraCode.png" alt=""></div>
+        <ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre-mi">Sobre Mí</a></li>
            <li><a href="#cursos">Cursos</a></li>
@@ -37,24 +27,14 @@
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <!-- Botón toggle -->
-        <div class="menu-toggle" id="menu-toggle" aria-label="Menú">
+        <button class="menu-toggle" aria-label="Menu">
           <span></span>
           <span></span>
           <span></span>
-        </div>
- 
+        </button>
+      </div>
     </nav>
- <script>
-      const toggle = document.getElementById("menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
 
-      toggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-
-</header>
     <!-- Inicio -->
     <section id="inicio" class="hero">
       <div class="hero-content">
@@ -168,7 +148,7 @@
               <h3 style="color: rgb(10, 10, 10)">Instituto web</h3>
               <h4>Certificado de cursos</h4>
           <button class="my-button boton_para_abajo"> 
-            <a href="cursos/AdmDatosDiplo/Administradorbasededatos.pdf"  download="Administradorbasededatos.pdf">Tester Full Stack</a></button>
+            <a href="img/TestingFullStack.png"  download="TestingFullStack.png">Tester Full Stack</a></button>
                  <br>   <button class="my-button boton_para_abajo"> 
             <a href="img/certificado_Lucas_Ezequiel_Garcia_Aran.pdf"  download="testerQA.pdf">Tester QA</a></button>
 
@@ -266,7 +246,7 @@
               <h3>VyJ Studio</h3>
               <h4>Salón de belleza</h4>
               <p>
-                Aplicación web para servicios de belleza a domicilio, ubicado en Argentina.
+                Aplicación web para servicios de belleza a domicilio.
               </p>
               <div class="project-tags">
                 <span>HTML</span>
@@ -275,12 +255,12 @@
               </div>
               <div class="project-links">
                 <a
-                  href="https://vyjbeauty-demo.netlify.app/"
+                  href="https://github.com"
                   target="_blank"
                   class="btn secondary"
-                  >Ver Página</a
+                  >Ver Código</a
                 >
-               
+                <a href="#" class="btn primary">Demo</a>
               </div>
             </div>
           </article>
@@ -295,7 +275,6 @@
               <h3>Masdoblons</h3>
               <h4>Página web para una organización de eventos</h4>
               <p>Desarrollo de una página web para eventos ubicado en España.</p>
-              <br>
               <div class="project-tags">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -306,12 +285,12 @@
               </div>
               <div class="project-links">
                 <a
-                  href="https://masdoblons.com/"
+                  href="https://github.com"
                   target="_blank"
                   class="btn secondary"
-                  >Ver Página</a
+                  >Ver Código</a
                 >
-              
+                <a href="#" class="btn primary">Demo</a>
               </div>
             </div>
           </article>
@@ -351,7 +330,7 @@
                 lucasgezear@gmail.com
               </a>
               <a
-                href="https://www.linkedin.com/in/lucas-ezequiel-garcia-aran-0729a120b/"
+                href="https://linkedin.com"
                 target="_blank"
                 class="contact-link"
               >
@@ -374,7 +353,7 @@
                 </svg>
                 LinkedIn
               </a>
-              <a href="https://github.com/lucasga9494" target="_blank" class="contact-link">
+              <a href="https://github.com" target="_blank" class="contact-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -396,7 +375,7 @@
           </div>
           <div class="contact-info1">
             <h3>Contacto por whatsapp<h3>
-            <a href=" https://api.whatsapp.com/send/?phone=5491123889152&text&type=phone_number&app_absent=0"target=blank>
+            <a href=" https://api.whatsapp.com/send/?phone=01123889152&text&type=phone_number&app_absent=0"target=blank>
               <i class="fa-brands fa-whatsapp" style="color: #2f803a;"></i>
     
         
