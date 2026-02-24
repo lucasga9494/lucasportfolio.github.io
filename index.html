@@ -2,12 +2,20 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+           <meta name="description" content="Analista de sistemas, Buenos Aires, Argentina"/>
+
+    <!-- Palabras clave (opcional, Google ya casi no las usa) -->
+    <meta name="keywords" content="lucas ezequiel garcia aran, lucas garcia aran, lucas garcia, lucas aran, desarrollador, portfolio, testerQA, Tecnologia, movil, "/>
+  <meta name="google-site-verification" content="fJPpOnVARcd7K1e85tWXMontPF1L_DUlO8hFl_lBnHw" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Desarrollador</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="icon" type="image/x-icon" href="img/codefolder_99364.ico" />
-  </head>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+
+    </head>
   <body>
     <!-- Navegación -->
     <nav id="navbar">
@@ -242,72 +250,64 @@
       </div>
     </section>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="projects">
-      <div class="container">
-        <h2 class="section-title">Proyectos Personales</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div
-              class="project-image"
-              style="
-                background-image: url('img/vyj.jpg');
-              "
-            ></div>
-            <div class="project-content">
-              <h3>VyJ Studio</h3>
-              <h4>Salón de belleza</h4>
-              <p>
-                Aplicación web para servicios de belleza a domicilio.
-              </p>
-              <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href= "https://vyjbeauty-demo.netlify.app/"
-                  target="_blank"
-                  class="btn secondary"
-                  >Ver página</a
-                >
-              
-            </div>
-          </article>
-          <article class="project-card">
-            <div
-              class="project-image"
-              style="
-                background-image: url('img/masdoblons.png');
-              "
-            ></div>
-            <div class="project-content">
-              <h3>Masdoblons</h3>
-              <h4>Página web para una organización de eventos</h4>
-              <p>Desarrollo de una página web para eventos ubicado en España.</p>
-              <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>PHP</span>
-                <span>WordPress</span>
 
-                
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://masdoblons.com/"
-                  target="_blank"
-                  class="btn secondary"
-                  >Ver página</a
-                >
-               
-              </div>
+    <!-- Proyectos -->
+     <section id="proyectos" class="projects">
+        <div class="container">
+           
+          <h2 class="section-title">Proyectos Personales</h2>
+            
+            <div class="splide splide-integramos">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                    <li class="splide__slide">
+                            <article class="project-card">
+                                <div class="project-image" style="background-image: url('img/masdoblons.png');"></div>
+                                <div class="project-content">
+                                    <h3>Masdoblons</h3>
+                                    <p>Página web para organización de eventos en España.</p>
+                                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>WordPress</span><span>PHP</span></div>
+                                    <div class="project-links">
+                                        <a href="https://masdoblons.com/" target="_blank" class="btn secondary">Ver página</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>    
+                         <li class="splide__slide">
+                            <article class="project-card">
+                                <div class="project-image" style="background-image: url('img/vyj.jpg');"></div>
+                                <div class="project-content">
+                                    <h3>VyJ Studio</h3>
+                                    <p>Aplicación web para servicios de belleza.</p>
+                                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                                    <div class="project-links">
+                                        <a href="https://vyjbeauty-demo.netlify.app/" target="_blank" class="btn secondary">Ver página</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="splide__slide">
+                            <article class="project-card">
+                                <div class="project-image" style="background-image: url('img/herrero.jpg');"></div>
+                                <div class="project-content">
+                                    <h3>Herrería Yrigoyen</h3>
+                                    <p>Aplicación web para servicios de herrería artesanal.</p>
+                                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span></div>
+                                    <div class="project-links">
+                                        <a href="https://herreriayrigoyen-demo.netlify.app/" target="_blank" class="btn secondary">Ver página</a>
+                                    </div>
+                                </div> 
+                            </article>
+                       
+</li>
+                        
+
+                       
+                    </ul>
+                </div>
             </div>
-          </article>
-       
         </div>
-      </div>
     </section>
     <section id="novedades" class="projects">
       <div class="container">
@@ -415,6 +415,10 @@
     </footer>
 
     <script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="splide.js"></script>
+    
   </body>
+
+ 
 </html>
