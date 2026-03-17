@@ -1,13 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
+
  
 
+document.addEventListener('DOMContentLoaded', function () {
   new Splide('.splide', {
-    type:'loop',
+    type: 'loop',
     perPage: 2,
     autoplay: true,
     pauseOnHover: true,
     arrows: true,
     pagination: true,
     speed: 500,
+    gap: '30px',
   }).mount();
 });
